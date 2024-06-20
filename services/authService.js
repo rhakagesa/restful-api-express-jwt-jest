@@ -1,7 +1,7 @@
 "use strict";
 
 const UserRepository = require("../models").User;
-const { comparePassword, hashPassword } = require("../helpers/bcrypt");
+const { comparePassword } = require("../helpers/bcrypt");
 const { generateToken } = require("../helpers/jwt");
 
 module.exports = class AuthService {
